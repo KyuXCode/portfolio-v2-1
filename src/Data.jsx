@@ -68,14 +68,15 @@ export const bios = [
 // eslint-disable-next-line react/jsx-key
 export const icons = [<FaHtml5/>, <SiCss3/>, <FaSass/>, <SiJavascript/>, <FaPhp/>, <SiFlutter/>, <SiDart/>,
     // eslint-disable-next-line react/jsx-key
-    <FaReact/>, <SiAdonisjs/>, <SiTypescript/>, <FaNodeJs/>, <SiMysql/>, <MongoDB/> , <SiKotlin/>, <FaJava/>, <FaPython/>, <FaFigma/>]
+    <FaReact/>, <SiAdonisjs/>, <SiTypescript/>, <FaNodeJs/>, <SiMysql/>, <MongoDB/>, <SiKotlin/>, <FaJava/>,
+    <FaPython/>, <FaFigma/>]
 
 export const experiences = [
     {
         id: 1,
         year: "2022 - Current",
         position: "Development Specialist",
-        company: "Digital Corps Agency (Ball State University)"
+        company: "Digital Corps Digital Agency (Ball State University)"
     },
     {
         id: 2,
@@ -109,14 +110,14 @@ export const projects = [
 
     {
         id: 4,
-        img: comingSoon,
+        img: null,
         link: null,
         name: "Corstagram",
         category: "Digital Corps"
     },
     {
         id: 5,
-        img: comingSoon,
+        img: null,
         link: null,
         name: "ReelZen",
         category: "Personal"
@@ -126,6 +127,21 @@ export const projects = [
         img: work6,
         link: "https://typing-game-practice.netlify.app/",
         name: "Typing Game",
+        category: "Digital Corps"
+    },
+    {
+        id: 7,
+        img: null,
+        link: "https://remnant-trust.apsoprojects.org",
+        name: "The Remnant Trust Timeline",
+        category: "Digital Corps"
+    },
+
+    {
+        id: 8,
+        img: null,
+        link: null,
+        name: "CERES Website",
         category: "Digital Corps"
     }
 ]

@@ -3,6 +3,7 @@ import { workNavs } from '../../../Data.jsx';
 import './Portfolio.scss'
 import { projects } from '../../../Data.jsx';
 import { motion, AnimatePresence } from 'framer-motion';
+import comingSoon from '../../../assests/coming.jpg'
 
 function Portfolio() {
     const [tab, setTab] = useState({ name: 'all' });
@@ -69,7 +70,7 @@ function Portfolio() {
                                 key={work.id}
                             >
                                 <motion.a href={work.link} target='_blank'>
-                                    < motion.img src={work.img} alt="" />
+                                    < motion.img src={work.img? work.img : comingSoon} alt="" />
                                 </motion.a>
 
                                 <motion.h2>
