@@ -51,7 +51,7 @@ function Navbar() {
             >
 
             <div className="nav-box">
-                <a href='#home' className="logo">
+                <a href='//#home' className="logo">
                     <h3>KY</h3>
                 </a>
 
@@ -59,7 +59,7 @@ function Navbar() {
                     {navLinks.map((navLink, index) => {
                         return (
                             <li key={index}>
-                                <a href={`#${navLink}`}>{navLink}</a>
+                                <a href={`/#${navLink}`}>{navLink}</a>
                             </li>)
                     })}
                 </ul>
@@ -93,7 +93,7 @@ function Navbar() {
                     {navLinks.map((navLink, index) => {
                         return (
                             <li key={index} >
-                                <a href={`#${navLink}`} onClick={() => setToggle(false)}>{navLink}</a>
+                                <a href={`/#${navLink}`} onClick={() => setToggle(false)}>{navLink}</a>
                             </li>
                         )
                     })}

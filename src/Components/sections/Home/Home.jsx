@@ -1,7 +1,6 @@
-import { useEffect, useState } from 'react';
 import portrait from "../../../assests/portrait.jpg"
 import portrait2 from "../../../assests/portrait2.jpg"
-import './Home.scss'
+import './home.scss'
 
 
 function Home() {

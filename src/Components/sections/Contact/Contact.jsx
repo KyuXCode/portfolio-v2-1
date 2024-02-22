@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './Contact.scss'
+import './contact.scss'
 import { contacts } from '../../../Data.jsx';
 import { socialIcons } from '../../../Data.jsx';
 import { motion } from 'framer-motion';

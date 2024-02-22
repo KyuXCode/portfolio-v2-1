@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { icons } from '../../../Data.jsx';
 import { motion } from 'framer-motion'
 import { experiences } from '../../../Data.jsx';
-import './Skills.scss'
+import './skills.scss'
 
 function Skills() {
 

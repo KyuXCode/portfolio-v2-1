@@ -8,7 +8,7 @@ import portrait from "../../../assests/portrait.jpg"
 import portrait2 from "../../../assests/portrait2.jpg"
 import resume from "../../../assests/KevinYu.pdf"
 
-import './About.scss'
+import './about.scss'
 
 
 
