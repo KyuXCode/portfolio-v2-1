@@ -12,7 +12,7 @@ function Home() {
 
             <div className="profile-text">
                 <h3 className="name">
-                    Hi, I&apos;m <span>Kevin Yu</span>
+                    Hi, I&apos;m <span>Kai Cheng Yu</span>
                 </h3>
                 <span className="job">Software Developer</span>
                 <span className="text">Passionate <br />

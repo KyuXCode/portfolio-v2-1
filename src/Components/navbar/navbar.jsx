@@ -51,7 +51,7 @@ function Navbar() {
             >
 
             <div className="nav-box">
-                <a href='//#home' className="logo">
+                <a href='/#home' className="logo">
                     <h3>KY</h3>
                 </a>
 

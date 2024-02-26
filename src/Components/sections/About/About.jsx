@@ -22,7 +22,7 @@ function About() {
                 whileInView={{ y: [-50, 0], opacity: 1 }}
             >
 
-                <span>Who Am I</span>
+                <span>Who I AM</span>
                 <h1>About Me</h1>
 
             </motion.div>
