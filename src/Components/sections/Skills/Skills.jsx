@@ -62,7 +62,7 @@ function Skills() {
                         <motion.div className="tools" key={index}
                             initial={{ opacity: 0 }}
                             whileInView={{ opacity: 1 }}
-                            transition={{ duration: 1.8 }}
+                            transition={{ duration: 2 }}
                         >
                             {icon}
                         </motion.div>
