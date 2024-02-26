@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react';
 
-// Fix Resume download
-
 import { motion } from 'framer-motion';
 import { bios } from '../../../Data.jsx'
 import portrait from "../../../assests/portrait.jpg"
@@ -56,7 +54,7 @@ function About() {
                         )
                     })}
 
-                    <motion.a target="_blank" href={resume} download onClick="return confirm('You want to download Kevin\'s resume?')"
+                    <motion.a target="_blank" href={resume} onClick="return confirm('You want to download Kevin\'s resume?')"
                         whileHover={{ scale: 1.1 }}
                         transition={{ duration: 0.3 }}
                     >
