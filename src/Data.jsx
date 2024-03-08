@@ -17,9 +17,8 @@ import {
 import {SiTypescript, SiAdonisjs, SiKotlin, SiFlutter, SiDart, SiJavascript, SiCss3, SiMysql} from "react-icons/si";
 import portrait from "./assests/portrait.jpg"
 import portrait2 from "./assests/portrait2.jpg"
-import comingSoon from "./assests/coming.jpg"
 import MongoDB from "./assests/MongoDB_Logomark_SlateBlue.svg?react";
-import work from "./assests/work.png"
+import work from "./assests/work.jpg"
 import demo from "./assests/work1.gif"
 import work2 from "./assests/work2.jpg"
 import work3 from "./assests/work3.jpg"
@@ -42,21 +41,20 @@ export const bios = [
     {
         id: 1,
         icon: <FaUser/>,
-        key: "Name",
-        value: "Kevin Yu"
+        value: "Kai Cheng (Kevin) Yu"
     },
     {
         id: 2,
-        icon: <FaPhoneAlt/>,
-        key: "Phone",
-        value: "317-565-3252"
+        icon: <FaPaperPlane/>,
+        value: "kai38547@gmail.com",
+        links: "mailto:kai38547@gmail.com"
     },
     {
         id: 3,
-        icon: <FaPaperPlane/>,
-        key: "Email",
-        value: "kai38547@gmail.com"
-    },
+        icon: <FaPhoneAlt/>,
+        value: "317-565-3252",
+        links: "tel:317-565-3252"
+    }
     // {
     //     id: 4,
     //     icon: <BsFileEarmarkPdfFill />,
@@ -66,10 +64,9 @@ export const bios = [
 ]
 
 // eslint-disable-next-line react/jsx-key
-export const icons = [<FaHtml5/>, <SiCss3/>, <FaSass/>, <SiJavascript/>, <FaPhp/>, <SiFlutter/>, <SiDart/>,
-    // eslint-disable-next-line react/jsx-key
-    <FaReact/>, <SiAdonisjs/>, <SiTypescript/>, <FaNodeJs/>, <SiMysql/>, <MongoDB/>, <SiKotlin/>, <FaJava/>,
-    <FaPython/>, <FaFigma/>]
+export const icons = [<FaHtml5/>, <SiCss3/>, <FaSass/>, <SiJavascript/>, <FaPhp/>, <SiFlutter/>, <SiDart/>, <FaReact/>,
+    <SiAdonisjs/>, <SiTypescript/>, <FaNodeJs/>, <SiMysql/>, <MongoDB/>, <SiKotlin/>, <FaJava/>, <FaPython/>,
+    <FaFigma/>]
 
 export const experiences = [
     {
@@ -91,7 +88,10 @@ export const projects = [
         img: work,
         link: demo,
         name: "SilverScreen",
-        category: "School"
+        category: "School",
+        description: "here's the detail",
+        challenges: "",
+        solutions: ""
     },
     {
         id: 2,
@@ -114,13 +114,6 @@ export const projects = [
         link: null,
         name: "Corstagram",
         category: "Digital Corps"
-    },
-    {
-        id: 5,
-        img: null,
-        link: null,
-        name: "ReelZen",
-        category: "Personal"
     },
     {
         id: 6,
@@ -163,11 +156,13 @@ export const contacts = [
     {
         id: 2,
         icon: <FaPaperPlane/>,
-        infoText: "kai38547@gmail.com"
+        infoText: "kai38547@gmail.com",
+        links: "mailto:kai38547@gmail.com"
     },
     {
         id: 3,
         icon: <FaPhoneAlt/>,
-        infoText: "317-565-3252"
+        infoText: "317-565-3252",
+        links: "tel:317-565-3252"
     }
 ]

@@ -49,10 +49,26 @@
 
     }
 
+    a {
+      all: unset;
+
+      :hover{
+        cursor: pointer;
+        color: $tertiary;
+      }
+
+      .icon:hover{
+        color: $tertiary;
+        background: none;
+        scale: 1.5;
+      }
+    }
+
     .contact-left {
       display: flex;
       align-items: center;
       margin-top: 1rem;
+
 
       .icon {
         width: 50px;

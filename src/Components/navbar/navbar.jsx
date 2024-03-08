@@ -5,6 +5,8 @@ import "./Navbar.scss"
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 
+import logo from '../../assests/logo.svg'
+
 function Navbar() {
     const [scroll, setScroll] = useState(false);
     const [toggle, setToggle] = useState(false);
@@ -52,7 +54,7 @@ function Navbar() {
 
             <div className="nav-box">
                 <a href='/#home' className="logo">
-                    <h3>KY</h3>
+                    <img src={logo} alt=""/>
                 </a>
 
                 <ul className="navlinks">

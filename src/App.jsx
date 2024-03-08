@@ -9,6 +9,7 @@ import {createBrowserRouter, RouterProvider, Routes} from "react-router-dom";
 import ProjectDetail from "./Components/ProjectDetail/ProjectDetail.jsx";
 import MainPage from "./Components/MainPage/MainPage.jsx";
 
+
 const router = createBrowserRouter([
     {
         path: "/",

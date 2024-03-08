@@ -6,7 +6,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
-  body {
+  body, textarea {
     background: $background;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -17,7 +17,7 @@
   .container {
     max-width:1224px;
     min-height: 100vh;
-    padding: 9rem 1.5rem 0 1.5rem;
+    padding: 9rem 2rem 0 2rem;
     margin: 0 auto;
   }
   /* @font-face {
