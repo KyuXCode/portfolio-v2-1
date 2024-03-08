@@ -44,14 +44,11 @@ function About() {
                             transition={{duration: 1}}
                 >
 
-                    {/*TODO: fix style*/}
                     {bios.map(bio => (
 
                         <div className="bio" key={bio.id}>
                             <span className="bioKey">{bio.icon}</span>
-                            <a href={bio.links}>
-                                <span className="bioValue">{bio.value}</span>
-                            </a>
+                                <span className="bioValue"><a href={bio.links}>{bio.value}</a></span>
                         </div>
 
                     ))}
