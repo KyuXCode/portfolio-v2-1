@@ -3,6 +3,9 @@
 .projects-container {
   color: $secondary;
   line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 
   #arrow{
     svg{
@@ -14,6 +17,16 @@
     }
   }
 
+  div>h1{
+    color: #67ffdb;
+    font-style: italic;
+  }
+
+  div>p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
   .project-header {
     display: flex;
     gap: 1rem;
@@ -21,6 +34,8 @@
 
     h1{
       font-size: 3rem;
+      color: white;
+      font-style: unset;
     }
 
     a{

@@ -40,7 +40,7 @@ function ProjectDetail() {
             </div>
 
             <div className="project-solution">
-                <h1>Solution</h1>
+                <h1>What I Learned...</h1>
                 <p>{project.solutions}</p>
             </div>
 
