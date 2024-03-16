@@ -41,12 +41,12 @@
 
   .card:hover {
     color: $primary-color;
-    transition: color 1s;
+    -webkit-transition: color 1s;
   }
 
   .card:hover:before,
   .card:hover:after {
-    animation: none;
+    -webkit-animation: none;
     opacity: 0;
   }
 
@@ -56,13 +56,13 @@
     width: 104%;
     height: 102%;
     border-radius: 8px;
-    background-image: linear-gradient(
+    background-image: -webkit-linear-gradient(
                     var(--rotate), $primary-color, $secondary-color 43%);
     position: absolute;
     z-index: -1;
     top: -1%;
     left: -2%;
-    animation: spin 2.5s linear infinite;
+    -webkit-animation: spin 2.5s linear infinite;
   }
 
   .card::after {
@@ -77,11 +77,11 @@
     margin: 0 auto;
     transform: scale(1);
     filter: blur(calc($card-height / 6));
-    background-image: linear-gradient(
+    background-image: -webkit-linear-gradient(
                     var(--rotate), $primary-color, $secondary-color 43%, #4e00c2);
     opacity: 1;
     transition: opacity .5s;
-    animation: spin 2.5s linear infinite;
+    -webkit-animation: spin 2.5s linear infinite;
   }
 
   @keyframes spin {
