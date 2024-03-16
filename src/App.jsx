@@ -5,12 +5,12 @@ import Home from './Components/sections/Home/Home'
 import Portfolio from './Components/sections/Portfolio/Portfolio'
 import Skills from './Components/sections/Skills/Skills'
 import Navbar from './Components/navbar/Navbar'
-import {createBrowserRouter, RouterProvider, Routes} from "react-router-dom";
+import { createHashRouter, RouterProvider, Routes} from "react-router-dom";
 import ProjectDetail from "./Components/ProjectDetail/ProjectDetail.jsx";
 import MainPage from "./Components/MainPage/MainPage.jsx";
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: "/",
         element: <MainPage/>
