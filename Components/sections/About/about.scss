@@ -1,0 +1,189 @@
+@import '../../../Template/Color.scss';
+@import '../../../Template/Variables';
+
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+
+.about-box {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  gap: 2rem;
+
+
+  .card {
+    background: transparent;
+    width: $card-width;
+    height: $card-height;
+    position: relative;
+    border-radius: 6px;
+    text-align: center;
+
+
+    font-size: 1.5em;
+    color: rgb(88 199 250 / 0%);
+    cursor: pointer;
+    place-self: center;
+
+    .img {
+      object-fit: cover;
+      border-radius: 6px;
+      width: $card-width;
+      height: $card-height;
+      overflow: hidden;
+    }
+  }
+
+  .card:hover {
+    color: $primary-color;
+    -webkit-transition: color 1s;
+  }
+
+  .card:hover:before,
+  .card:hover:after {
+    -webkit-animation: none;
+    opacity: 0;
+  }
+
+  .card::before {
+    content: "";
+    font-size: 5rem;
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: -webkit-linear-gradient(
+                    var(--rotate), $primary-color, $secondary-color 43%);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    -webkit-animation: spin 2.5s linear infinite;
+  }
+
+  .card::after {
+    position: absolute;
+    content: "";
+    top: calc($card-height / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(1);
+    filter: blur(calc($card-height / 6));
+    background-image: -webkit-linear-gradient(
+                    var(--rotate), $primary-color, $secondary-color 43%, #4e00c2);
+    opacity: 1;
+    transition: opacity .5s;
+    -webkit-animation: spin 2.5s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+  }
+
+  .about-left {
+    background: transparent;
+    width: $card-width;
+    height: $card-height;
+    justify-self: center;
+    border-radius: 5px;
+    box-shadow: 0 0 20px $tertiary;
+    align-self: center;
+
+    @media screen and (max-width: 700px) {
+      margin-top: -2rem;
+    }
+
+    img {
+      border-radius: 2px;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+
+      &:hover {
+        transform: translateX(-45) translateY(-38);
+        opacity: 1;
+      }
+
+    }
+  }
+
+  .about-right {
+    color: $secondary;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    @media screen and (max-width: 700px) {
+      padding: 0;
+      margin-top: 2rem;
+    }
+
+    p {
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
+      max-width: 450px;
+    }
+
+    .bio {
+      display: flex;
+      font-size: 0.85rem;
+      max-width: 200px;
+      margin-bottom: 1rem;
+
+      a {
+        all: unset;
+        background: transparent;
+        line-height: 1.2;
+        font-size: .9rem;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .bioKey {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-right: 3rem;
+      }
+
+      .bioValue {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+      }
+    }
+
+    a {
+      text-align: center;
+      text-decoration: none;
+      color: $primary;
+      background: $secondary;
+      padding: 0.65rem;
+      margin: 0 auto;
+      border-radius: 10px;
+      font-size: 0.85rem;
+      text-transform: capitalize;
+      width: 165px;
+    }
+  }
+}
