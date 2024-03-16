@@ -1,8 +1,5 @@
-import {useEffect, useState} from 'react';
-
 import {motion} from 'framer-motion';
 import {bios} from '../../../Data.jsx'
-import portrait from "../../../assests/portrait.jpg"
 import portrait2 from "../../../assests/portrait2.jpg"
 import resume from "../../../assests/KaiChengYu.pdf"
 
@@ -30,11 +27,11 @@ function About() {
                             transition={{duration: 1}}
                 >
 
-                    <motion.img
-                        src={portrait2}
-                        whileHover={{x: -45, y: -38}}
-                        transition={{duration: 0.3}}
-                    />
+                    <div className="card">
+                        <div className="img">
+                            <img src={portrait2} alt={"Portrait"}/>
+                        </div>
+                    </div>
 
                 </motion.div>
 
@@ -48,7 +45,7 @@ function About() {
 
                         <div className="bio" key={bio.id}>
                             <span className="bioKey">{bio.icon}</span>
-                                <span className="bioValue"><a href={bio.links}>{bio.value}</a></span>
+                            <span className="bioValue"><a href={bio.links}>{bio.value}</a></span>
                         </div>
 
                     ))}

@@ -14,7 +14,18 @@ import {
     FaPhp,
     FaNodeJs
 } from "react-icons/fa";
-import {SiTypescript, SiAdonisjs, SiKotlin, SiFlutter, SiDart, SiJavascript, SiCss3, SiMysql} from "react-icons/si";
+import {
+    SiTypescript,
+    SiAdonisjs,
+    SiKotlin,
+    SiFlutter,
+    SiDart,
+    SiJavascript,
+    SiCss3,
+    SiMysql,
+    SiDotnet
+
+} from "react-icons/si";
 import portrait from "./assests/portrait.jpg"
 import portrait2 from "./assests/portrait2.jpg"
 import MongoDB from "./assests/MongoDB_Logomark_SlateBlue.svg?react";
@@ -64,9 +75,64 @@ export const bios = [
 ]
 
 // eslint-disable-next-line react/jsx-key
-export const icons = [<FaHtml5/>, <SiCss3/>, <FaSass/>, <SiJavascript/>, <FaPhp/>, <SiFlutter/>, <SiDart/>, <FaReact/>,
-    <SiAdonisjs/>, <SiTypescript/>, <FaNodeJs/>, <SiMysql/>, <MongoDB/>, <SiKotlin/>, <FaJava/>, <FaPython/>,
-    <FaFigma/>]
+export const icons = [
+    {
+        name: "HTML",
+        component: <FaHtml5/>
+    }, {
+        name: "CSS",
+        component: <SiCss3/>
+    }, {
+        name: "SASS",
+        component: <FaSass/>
+    }, {
+        name: "JavaScript",
+        component: <SiJavascript/>
+    },
+    {
+        name: "SASS",
+        component: <FaSass/>
+    }, {
+        name: "React.js",
+        component: <FaReact/>
+    }, {
+        name: "Adonis.js",
+        component: <SiAdonisjs/>
+    }, {
+        name: "TypeScript",
+        component: <SiTypescript/>
+    }, {
+        name: "Php",
+        component: <FaPhp/>
+    }, {
+        name: "Flutter",
+        component: <SiFlutter/>
+    }, {
+        name: "Dart",
+        component: <SiDart/>
+    }, {
+        name: "Node.js",
+        component: <FaNodeJs/>
+    }, {
+        name: "MySql",
+        component: <SiMysql/>
+    }, {
+        name: "MongoDb",
+        component: <MongoDB/>
+    }, {
+        name: "Kotlin",
+        component: <SiKotlin/>
+    }, {
+        name: "Java",
+        component: <FaJava/>
+    }, {
+        name: "Python",
+        component: <FaPython/>
+    }, {
+        name: "dotNET",
+        component: <SiDotnet/>
+    }
+];
 
 export const experiences = [
     {

@@ -64,7 +64,8 @@ function Skills() {
                             whileInView={{ opacity: 1 }}
                             transition={{ duration: 1.8 }}
                         >
-                            {icon}
+                            {icon.component}
+                            <p>{icon.name}</p>
                         </motion.div>
                     )
                 })}
